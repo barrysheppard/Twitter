@@ -7,6 +7,8 @@ library(tm)
 library(wordcloud)
 library(RColorBrewer)
 
+# Need to also check out https://sites.google.com/site/miningtwitter/questions/sentiment/sentiment
+
 
 #consumer_key <- 'XXXXXX'
 #consumer_secret <- 'XXXXXX'
@@ -44,6 +46,8 @@ wordcloud(dm$word, dm$freq, max.words=100, min.freq=5, random.order=FALSE, rot.p
 
 
 # save the image in png format
-png("TwitterCloud.png", width=12, height=8, units="in", res=300)
-wordcloud(dm$word, dm$freq, random.order=FALSE, colors=brewer.pal(8, "Dark2"))
-dev.off()
+# png("TwitterCloud.png", width=12, height=8, units="in", res=300)
+# wordcloud(dm$word, dm$freq, random.order=FALSE, colors=brewer.pal(8, "Dark2"))
+# dev.off()
+
+
